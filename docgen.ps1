@@ -1,1 +1,0 @@
-oscript.exe .\docgen.os
