@@ -1,7 +1,7 @@
 // Пример формирования отчета в формате Generic Issue Data для sonarqube
 // https://docs.sonarqube.org/latest/analysis/generic-issue/
 
-#Использовать "../src"
+#Использовать osparser
 #Использовать "./plugins"
 
 ПутьИсходника = "C:\dev\sonarqube\myprj\src\CommonModules\CommonUse\Ext\Module.bsl";
