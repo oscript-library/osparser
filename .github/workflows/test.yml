@@ -1,0 +1,20 @@
+name: Тестирование
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        # версия среды из packagedef (1.0.21) оставлена для совместимости самой библиотеки,
+        # но тесты используют OneUnit, которому нужен движок 2.0 и новее
+        oscript_version: ['stable', 'dev']
+    uses: autumn-library/workflows/.github/workflows/test.yml@v1
+    with:
+      oscript_version: ${{ matrix.oscript_version }}
+      test_engine: oneunit
+      test_dir_paths: tests

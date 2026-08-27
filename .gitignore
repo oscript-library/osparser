@@ -1,2 +1,4 @@
 *.txt
 sandbox
+oscript_modules
+*.ospx
