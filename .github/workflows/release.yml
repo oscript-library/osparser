@@ -10,6 +10,7 @@ jobs:
   release:
     uses: autumn-library/workflows/.github/workflows/release.yml@v1
     with:
+      oscript_version: stable
       package_mask: "osparser-*.ospx"
     secrets:
       PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
